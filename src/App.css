@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-image: url("../src/assets/pattern-bg-mobile.png");
+  height: 35vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: cover;
+  color: white;
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+  border: none;
+}
+
+input {
+  padding-right: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  height: 55px;
+  width: 75vw;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: black;
+  border: none;
+}
+
+.box {
+  background-color: white;
+  width: 75vw;
+  position: absolute;
+  border-radius: 10px;
+  top: 180px;
+  padding-top: 18px;
+  z-index: 2;
+}
+
+.App {
+  height: 100vh;
+  background-color: rgba(211, 211, 211, 0.39);
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  color: hsl(0, 0%, 17%);
+}
+
+#map {
+  height: 65vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (min-width: 911px) {
+
+  header {
+    background-image: url("../src/assets/pattern-bg-desktop.png");
+  }
+
+  input {
+    width: 40vw;
+  }
+
+  .box {
+    display: flex;
+    height: 25vh;
+    align-items: center;
+    margin-top: 5vh;
+  }
+
+  .datos {
+    width: 25%
+  }
+
+  .barra {
+    border-right: 1px solid lightgray ;
+  }
+}
